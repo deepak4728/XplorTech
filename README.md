@@ -1,7 +1,7 @@
 
 ---
 
-# TechverseX: Bridging Opportunities for Students
+# TechVerseX: Bridging Opportunities for Students
 
 !TechverseX Screenshot
 
