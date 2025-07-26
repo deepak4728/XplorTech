@@ -1,25 +1,25 @@
 
 ---
 
-# TechVerseX: Bridging Opportunities for Students
+# XplorTech: Bridging Opportunities for Students
 
-!TechVerseX Screenshot
+!XplorTech Screenshot
 
 ## Overview
-Welcome to TechVerseX! Our dynamic web platform connects aspiring students with valuable opportunities such as internships and scholarships. Whether you're a student seeking growth or an organization offering opportunities, TechVerseX is your hub.
+Welcome to XplorTech! Our dynamic web platform connects aspiring students with valuable opportunities such as internships and scholarships. Whether you're a student seeking growth or an organization offering opportunities, XplorTech is your hub.
 
 ## Features
 - **Latest Updates**: Stay informed about new internships and scholarship programs.
 - **User-friendly Interface**: Navigate seamlessly through listings and details.
-- **Responsive Design**: Access TechVerseX from any device.
+- **Responsive Design**: Access XplorTech from any device.
 
 ## Tech Stack
 - **HTML/CSS**: Crafted for clean and intuitive user experience.
 - **JavaScript**: Adds interactivity and dynamic features.
-- **GitHub Pages**: Hosts the live version of TechVerseX.
+- **GitHub Pages**: Hosts the live version of XplorTech.
 
 ## Getting Started
-1. Clone this repository: `git clone https://github.com/deepak4728/TechVerseX.git`
+1. Clone this repository: `git clone https://github.com/deepak4728/XplorTech.git`
 2. Customize content in `index.html`, `main.css`, and `app.js`.
 3. Replace the screenshot image with your own.
 4. Deploy your site using GitHub Pages.
@@ -29,12 +29,12 @@ We welcome feedback and contributions! Feel free to open an issue or submit a pu
 
 ---
 
-Feel free to adapt this template to your specific project. Best of luck with TechVerseX! 🚀🌟
+Feel free to adapt this template to your specific project. Best of luck with XplorTech! 🚀🌟
 
 
-# TechVerseX Channel - Full Stack Project Repository
+# XplorTech Channel - Full Stack Project Repository
 
-Welcome to the **TechVerseX Channel** repository, where we’re building an exciting **Full Stack Web Application** using modern tools and technologies! 🚀
+Welcome to the **XplorTech Channel** repository, where we’re building an exciting **Full Stack Web Application** using modern tools and technologies! 🚀
 
 ## 📚 **Tech Stack:**
 
