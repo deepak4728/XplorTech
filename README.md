@@ -3,7 +3,7 @@
 
 # XplorTech: Bridging Opportunities for Students
 
-!XplorTech Screenshot
+[!XplorTech Screenshot](https://whatsapp.com/channel/0029Va5EtHv5PO0tR9mCHN11)
 
 ## Overview
 Welcome to XplorTech! Our dynamic web platform connects aspiring students with valuable opportunities such as internships and scholarships. Whether you're a student seeking growth or an organization offering opportunities, XplorTech is your hub.
