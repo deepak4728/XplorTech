@@ -1,39 +1,213 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga Pose Classifier</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        h1 {
-            color: #667eea;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-    </style>
+    <link rel="stylesheet" href="/static/YogaPoseClassifier/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🧘 Welcome to Yoga Pose Classifier</h1>
-        <p>Analyze your yoga poses with AI technology</p>
-        <p>This app allows you to:</p>
-        <ul>
-            <li>Upload yoga pose images</li>
-            <li>Get instant pose classification</li>
-            <li>Receive personalized feedback</li>
-            <li>Improve your yoga form</li>
-        </ul>
-    </div>
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-section">
+                <div class="logo">🧘</div>
+                <h1>YogaPose AI</h1>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#classifier">Classifier</a>
+                <a href="#poses">Poses</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h2>🧘‍♀️ Yoga Pose Classifier</h2>
+            <p>Analyze your yoga poses with AI technology</p>
+            <button class="hero-btn">Get Started</button>
+        </section>
+
+        <!-- Features Section -->
+        <section class="content" id="classifier">
+            <div class="card">
+                <div class="card-icon">📸</div>
+                <h3>Upload Image</h3>
+                <p>Take a photo of your yoga pose and upload it to our AI classifier</p>
+                <button class="cta-btn">Upload Now</button>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🤖</div>
+                <h3>AI Analysis</h3>
+                <p>Our advanced AI model analyzes your pose and provides instant feedback</p>
+                <button class="cta-btn">Learn More</button>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">✨</div>
+                <h3>Get Feedback</h3>
+                <p>Receive personalized recommendations to improve your form</p>
+                <button class="cta-btn">View Tips</button>
+            </div>
+        </section>
+
+        <!-- Poses Section -->
+        <section id="poses">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #667eea;">Popular Yoga Poses</h2>
+            <div class="content">
+                <div class="card">
+                    <div class="card-icon">🙏</div>
+                    <h3>Downward Dog</h3>
+                    <p><strong>Difficulty:</strong> Beginner</p>
+                    <ul>
+                        <li>Stretches hamstrings</li>
+                        <li>Strengthens arms</li>
+                        <li>Calms the mind</li>
+                    </ul>
+                    <button class="cta-btn">View Guide</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">⚔️</div>
+                    <h3>Warrior I</h3>
+                    <p><strong>Difficulty:</strong> Intermediate</p>
+                    <ul>
+                        <li>Builds strength</li>
+                        <li>Improves balance</li>
+                        <li>Opens hips</li>
+                    </ul>
+                    <button class="cta-btn">View Guide</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🌳</div>
+                    <h3>Tree Pose</h3>
+                    <p><strong>Difficulty:</strong> Beginner</p>
+                    <ul>
+                        <li>Improves balance</li>
+                        <li>Strengthens legs</li>
+                        <li>Calms mind</li>
+                    </ul>
+                    <button class="cta-btn">View Guide</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">💪</div>
+                    <h3>Plank Pose</h3>
+                    <p><strong>Difficulty:</strong> Beginner</p>
+                    <ul>
+                        <li>Core strength</li>
+                        <li>Full body workout</li>
+                        <li>Improves posture</li>
+                    </ul>
+                    <button class="cta-btn">View Guide</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🏹</div>
+                    <h3>Bow Pose</h3>
+                    <p><strong>Difficulty:</strong> Advanced</p>
+                    <ul>
+                        <li>Stretches chest</li>
+                        <li>Strengthens back</li>
+                        <li>Energizing</li>
+                    </ul>
+                    <button class="cta-btn">View Guide</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🧘</div>
+                    <h3>Lotus Pose</h3>
+                    <p><strong>Difficulty:</strong> Advanced</p>
+                    <ul>
+                        <li>Deep relaxation</li>
+                        <li>Hip opener</li>
+                        <li>Meditation pose</li>
+                    </ul>
+                    <button class="cta-btn">View Guide</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About YogaPose AI</h4>
+                    <p>YogaPose AI is an intelligent system that helps you improve your yoga practice through AI-powered pose analysis and real-time feedback.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#classifier">Classifier</a></li>
+                        <li><a href="#poses">Poses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Yoga Guide</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#facebook" title="Facebook">f</a>
+                        <a href="#twitter" title="Twitter">𝕏</a>
+                        <a href="#instagram" title="Instagram">📷</a>
+                        <a href="#linkedin" title="LinkedIn">in</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 YogaPose AI. All rights reserved. | <a href="#" style="color: #667eea;">Privacy Policy</a> | <a href="#" style="color: #667eea;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when link is clicked
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>

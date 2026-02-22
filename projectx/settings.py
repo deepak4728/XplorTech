@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5m2)c*74l0ph7%y--vzw*_)rw&1u#9ycz2n9lhes(z3u^a0(yq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True  # Make sure this is True for development
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
@@ -120,7 +120,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'YogaPoseClassifier' / 'static',
+    BASE_DIR / 'Xplortech' / 'static',
+]
 
 # CORS settings (allow React dev server)
 CORS_ALLOWED_ORIGINS = [
